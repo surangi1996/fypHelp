@@ -5,19 +5,19 @@ To extract specific information like the sport name, venue, and time from a text
     Install the required packages:
     
     ```pip install spacy
-python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_sm```
 
 Implement the extraction and classification functions:
 
 
-import spacy
-import re
+```import spacy
+import re```
 
 # Load the English model
-nlp = spacy.load("en_core_web_sm")
+```nlp = spacy.load("en_core_web_sm")```
 
 # Train a text classifier for sport names
-def train_sport_classifier(nlp, data):
+```def train_sport_classifier(nlp, data):
     # Prepare the training data
     training_data = []
     for sport, text in data:
@@ -76,6 +76,6 @@ print(f"Venue: {venue}\nTime: {time}")
 
 # Predict sport using the text classifier
 sport = predict_sport(nlp, text)
-print(f"Sport: {sport}")
-```
+print(f"Sport: {sport}")```
+
 This example uses the spaCy library to extract the venue and time information with its NER model, and trains a custom text classifier to classify the sport name. Note that this is a simple example with a small dataset. For better accuracy and performance, you may need to train your NER model and the text classifier with more data.
