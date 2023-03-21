@@ -5,12 +5,11 @@ To extract specific information like the sport name, venue, and time from a text
     Install the required packages:
     
     ```pip install spacy
-```python -m spacy download en_core_web_sm
-```
+python -m spacy download en_core_web_sm
 
 Implement the extraction and classification functions:
 
-```
+
 import spacy
 import re
 
