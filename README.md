@@ -75,6 +75,7 @@ print(f"Venue: {venue}\nTime: {time}")
 
 # Predict sport using the text classifier
 sport = predict_sport(nlp, text)
-print(f"Sport: {sport}")```
+print(f"Sport: {sport}")
+```
 
 This example uses the spaCy library to extract the venue and time information with its NER model, and trains a custom text classifier to classify the sport name. Note that this is a simple example with a small dataset. For better accuracy and performance, you may need to train your NER model and the text classifier with more data.
