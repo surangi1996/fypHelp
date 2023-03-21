@@ -2,22 +2,20 @@
 
 To extract specific information like the sport name, venue, and time from a text, you can use a combination of Named Entity Recognition (NER) and text classification techniques. The NER can help you identify entities like venue and time, while text classification can be used for classifying the sport name. Here's a simple example using the spaCy library for NER and text classification:
 
-    Install the required packages:
+Install the required packages:
     
     ```pip install spacy
-python -m spacy download en_core_web_sm```
+python -m spacy download en_core_web_sm
 
 Implement the extraction and classification functions:
-
-
-```import spacy
-import re```
+import spacy
+import re
 
 # Load the English model
-```nlp = spacy.load("en_core_web_sm")```
+nlp = spacy.load("en_core_web_sm")
 
 # Train a text classifier for sport names
-```def train_sport_classifier(nlp, data):
+def train_sport_classifier(nlp, data):
     # Prepare the training data
     training_data = []
     for sport, text in data:
