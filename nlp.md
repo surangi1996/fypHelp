@@ -59,4 +59,5 @@ The best algorithm for multi-class text classification depends on the specific c
 03.0Random Forest: Random Forest is an ensemble learning algorithm that can be used for multi-class text classification. It can handle noisy data and is less prone to overfitting.
 04. Gradient Boosting: Gradient Boosting is another ensemble learning algorithm that can be used for multi-class text classification. It is effective in handling high-dimensional data and can provide high accuracy.
 05. Convolutional Neural Networks (CNN): CNNs are a type of deep learning algorithm that can learn hierarchical representations of text data, making them well-suited for complex text classification tasks.
+
 It's important to note that the performance of each algorithm can depend on factors such as the size of the dataset, the quality of the data, and the specific problem being solved. Therefore, it's recommended to experiment with different algorithms and evaluate their performance on a validation set before selecting the best algorithm for a specific task.
