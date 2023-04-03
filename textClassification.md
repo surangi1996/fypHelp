@@ -67,6 +67,7 @@ for i, text in enumerate(test_data):
     print(f'Text: {text}  Prediction: {y_pred[i]}')
 ```
 # example 02
+https://towardsdatascience.com/multinomial-na%C3%AFve-bayes-for-documents-classification-and-natural-language-processing-nlp-e08cc848ce6
 
 ```
 import os
