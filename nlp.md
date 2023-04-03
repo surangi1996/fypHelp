@@ -61,3 +61,23 @@ The best algorithm for multi-class text classification depends on the specific c
 05. Convolutional Neural Networks (CNN): CNNs are a type of deep learning algorithm that can learn hierarchical representations of text data, making them well-suited for complex text classification tasks.
 
 It's important to note that the performance of each algorithm can depend on factors such as the size of the dataset, the quality of the data, and the specific problem being solved. Therefore, it's recommended to experiment with different algorithms and evaluate their performance on a validation set before selecting the best algorithm for a specific task.
+
+# Multinomial Naïve Bayes
+
+Multinomial Naïve Bayes is a commonly used algorithm for text classification tasks, particularly in natural language processing (NLP). It is a probabilistic algorithm that is based on Bayes' theorem and the assumption of independence between the features.
+
+In text classification, the goal is to assign one or more labels to a text document based on its content. For example, given a set of product reviews, we may want to classify each review as positive or negative. To do this, we need to preprocess the text data by tokenizing the text into words, removing stop words, and converting the text into numerical features that can be used as input to a machine learning algorithm.
+
+The first step in implementing a Multinomial Naïve Bayes model for text classification is to convert the text data into numerical features. This is typically done using the bag-of-words model, which represents each document as a vector of word counts. The bag-of-words model ignores the order of the words and treats each word as a separate feature. To do this, we use a CountVectorizer object from scikit-learn, which transforms the text data into a matrix of token counts.
+
+Once the text data has been converted into numerical features, we can train a Multinomial Naïve Bayes classifier on the training data. The classifier calculates the probability of each class label given the features of the document, using Bayes' theorem:
+
+P(y|x) = P(x|y) * P(y) / P(x)
+
+where P(y|x) is the probability of the document belonging to class y given its features x, P(x|y) is the probability of observing the features x given the class label y, P(y) is the prior probability of class y, and P(x) is the probability of observing the features x.
+
+The Multinomial Naïve Bayes classifier assumes that the features are conditionally independent given the class label, which means that it calculates the probability of a document belonging to a particular class label by multiplying the probabilities of each feature given the class label. This assumption simplifies the calculation of the probability of a document belonging to a particular class label, making the classifier computationally efficient.
+
+To make a prediction for a new document, the classifier calculates the probability of the document belonging to each class label and chooses the class label with the highest probability. This process is repeated for each document in the test data, and the predicted class labels are compared to the true class labels to evaluate the performance of the classifier.
+
+Overall, Multinomial Naïve Bayes is a simple and effective algorithm for text classification tasks. Its simplicity makes it particularly suitable for high-dimensional and sparse feature spaces, such as those commonly encountered in NLP. However, it may not always be the best choice for more complex classification tasks, and more advanced techniques may be required.
