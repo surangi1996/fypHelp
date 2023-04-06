@@ -51,3 +51,5 @@ print(classification_report(test_labels, test_pred))
 In this implementation, the text data is preprocessed and split into training and test sets. The TF-IDF feature extraction method is used to convert the text data into a numerical representation. The SVM model is trained using a linear kernel and C=1.0 hyperparameter. Finally, the performance of the SVM model is evaluated on the test set using classification report.
 
 Note that this is a simple example implementation and the parameters used in this implementation may not be optimal for your specific problem. You may need to fine-tune the hyperparameters and try different feature extraction methods to achieve better performance.
+
+https://link.springer.com/article/10.1007/s42452-020-2266-6
