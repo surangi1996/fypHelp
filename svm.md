@@ -1,3 +1,5 @@
+# Support Vector Machines (SVM)
+
 Support Vector Machines (SVM) is a powerful machine learning algorithm that can be used for text classification in NLP. Here is an in-depth explanation of how SVM can be used for text classification in NLP:
 
 Data Preprocessing: The first step is to preprocess the text data. This involves tokenizing the text into words or phrases, removing stop words, stemming or lemmatizing the words, and converting the text into a numerical representation that can be used by the SVM algorithm.
